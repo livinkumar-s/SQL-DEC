@@ -1,0 +1,68 @@
+Database
+----------
+>> A database is an organized collection of data stored in structured way so it can be easily accessed, managed and updated.
+
+RDBMS --> Relational Database Management System, SQLDB 
+------------------------------------------------
+>> Data will be stored in form of Table(Rows and Columns).
+>> SQL --> Structured Query Language 
+>> EX: PostgreSQL, Oracle, MySQL
+
+Non Relational Database Management System, NoSQL
+-----------------------------------------
+>> Data will be stored in form of objects or documents
+>> Ex: MongoDB, MariaDB
+
+SQL 
+----
+Syntax
+--------
+>> SQL is case-insensitive. (a=A).
+SELECT * FROM tbname;
+select * from tbname;
+SeLeCt * FrOm tbname;
+>> Each and every query should end with ;
+
+Database -->  Tables --> data
+(Schema)
+
+Datatypes
+---------
+Numeric Datatypes
+------------------
+INT ---> Whole Numbers
+FLOAT ---> Decimal Numbers 
+BIGINT ---> Large whole Numbers
+DOUBLE ---> Large Decimal Numbers
+
+STRING Datatypes
+----------------
+CHAR(n)  --> Fixed length string. Ex: char(8) --> "hello","world", "priyanka", "hi"
+VARCHAR(n) --> Variable length string. Ex: VARCHAR(5) --> "hello","hi", "helicopter", "Hell"
+TEXT --> paragraph
+
+Boolean 
+--------
+BOOLEAN ---> True/False --> 1 or 0
+
+Date and Time 
+--------------
+DATE --> "yyyy-mm-dd"
+TIME --> "HH:MM:SS"
+DATETIME --> both
+
+Constraints
+-------------
+Primary Key ---> UNIQUE and NOT NULL. identify each rows uniquely. a table can contain only one primary key column.
+
+Queries 
+---------
+To Create Database ---> CREATE DATABASE dbname;
+To select a Database ---> USE dbname;
+To Create Table ---> CREATE TABLE tbname(
+    col1 datatype Constraint,
+    col2 datatype Constraint,
+    .
+    .
+    .
+);

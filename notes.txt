@@ -51,6 +51,15 @@ DATE --> "yyyy-mm-dd"
 TIME --> "HH:MM:SS"
 DATETIME --> both
 
+Operators 
+-----------
+=                       
+<
+>
+<=
+>=
+!=, <>
+
 Constraints
 -------------
 Primary Key ---> UNIQUE and NOT NULL. identify each rows uniquely. a table can contain only one primary key column.
@@ -66,3 +75,17 @@ To Create Table ---> CREATE TABLE tbname(
     .
     .
 );
+
+CRUD 
+------
+To Create Data --> INSERT INTO tbname (col details) VALUES val1,val2....
+To Read Data --> SELECT (col details --> *) FROM tbname;
+To Update Data ---> UPDATE tbname SET col1=val, col2=val;
+To Delete Data ---> DELETE FROM tbname;
+
+sql_safe_update ---> Cannot update mopre than one row. no update or delete without where clause. Filteration must depend on Primary key col.
+
+WHERE
+------
+used to filter rows 
+Ex: select, update, delete ..... WHERE condition;

@@ -60,6 +60,38 @@ Operators
 >=
 !=, <>
 
+Logical Operators 
+-------------------
+AND 
+OR 
+NOT
+
+BETWEEN --> inclusive range filter. 
+Ex: WHERE col BETWEEN num1 AND num2;
+
+IN operator ---> multiple or statements
+Ex: ... WHERE col IN (val1,val2.......);
+
+Pattern Matching or Wildcards 
+-------------------------------
+LIKE
+Ex: WHERE col LIKE Pattern;
+
+%  ---> matches 0 to infinite char.
+_  ---> only one char.
+
+'p%'  --> "priyanka", "p", "ppellow"
+'%n'  --> 'n'
+"__n" --> "ken" "ben"
+
+SORTING ---> ORDER BY
+---------------------
+Ex:  ORDER BY col asc/desc;
+
+LIMIT/OFFSET
+--------------
+Ex: Select ..... LIMIT num OFFSET num;
+
 Constraints
 -------------
 Primary Key ---> UNIQUE and NOT NULL. identify each rows uniquely. a table can contain only one primary key column.
@@ -85,7 +117,7 @@ To Delete Data ---> DELETE FROM tbname;
 
 sql_safe_update ---> Cannot update mopre than one row. no update or delete without where clause. Filteration must depend on Primary key col.
 
-WHERE
+WHERE   
 ------
 used to filter rows 
 Ex: select, update, delete ..... WHERE condition;

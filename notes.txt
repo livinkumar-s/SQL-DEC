@@ -53,7 +53,7 @@ DATETIME --> both
 
 Operators 
 -----------
-=                       
+=                     
 <
 >
 <=
@@ -115,9 +115,10 @@ To Read Data --> SELECT (col details --> *) FROM tbname;
 To Update Data ---> UPDATE tbname SET col1=val, col2=val;
 To Delete Data ---> DELETE FROM tbname;
 
-sql_safe_update ---> Cannot update mopre than one row. no update or delete without where clause. Filteration must depend on Primary key col.
+sql_safe_updates ---> Cannot update more than one row. no update or delete without where clause. Filteration must depend on Primary key col.
 
 WHERE   
 ------
 used to filter rows 
 Ex: select, update, delete ..... WHERE condition;
+

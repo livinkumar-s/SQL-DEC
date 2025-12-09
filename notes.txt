@@ -80,9 +80,9 @@ Ex: WHERE col LIKE Pattern;
 %  ---> matches 0 to infinite char.
 _  ---> only one char.
 
-'p%'  --> "priyanka", "p", "ppellow"
-'%n'  --> 'n'
-"__n" --> "ken" "ben"
+starting with 's' ---> 's%' --> "sheela", "shetty", "sekar", "s"
+ending with r ---> '%r'
+3 char , last char -->r ---> '__r'
 
 SORTING ---> ORDER BY
 ---------------------
@@ -122,3 +122,32 @@ WHERE
 used to filter rows 
 Ex: select, update, delete ..... WHERE condition;
 
+Functions in MySQL 
+------------------
+>> Predefined Operations that takes input and returns a value.
+
+Numeric Functions 
+------------------
+ROUND(dec) --> Rounds off to closest int.
+CEIL(dec)  --> Rounds off to the next int.
+FLOOT(dec) --> Removes Decimal point.
+ABS(num)--> Absolute number
+POWER(x,y) --> x power y
+MOD(x,y) --> x%y
+
+String Functions 
+--------------------
+CONCAT(str1,str2.....) --> attaching strings together.
+LENGTH(str) --> no of char.
+UPPER --> case conversion.
+LOWER --> case conversion.
+SUBSTRING(str, start, length) --> extracts substring from a string. "Hello world"--> "Hello"
+TRIM(str) ---> removes white spaces.
+REPLACE(str, old, new) --> replaces a substring with new one. "Welcome to the SQL session" --> "Welcome to the Python session"
+
+Date and Time 
+--------------
+CURDATE() --> today's date. "yyyy-mm-dd"
+CURTIME() --> time
+NOW() --> current date and time
+DATEDIFF(date1, date2) --> different between 2 dates.

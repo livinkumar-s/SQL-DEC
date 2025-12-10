@@ -94,7 +94,24 @@ Ex: Select ..... LIMIT num OFFSET num;
 
 Constraints
 -------------
-Primary Key ---> UNIQUE and NOT NULL. identify each rows uniquely. a table can contain only one primary key column.
+>> Constraints are rules applied to a column to ensure the data integrity.
+
+PRIMARY KEY ---> UNIQUE and NOT NULL. identify each rows uniquely. a table can contain only one primary key column.
+
+FOREIGN KEY ---> Creates relationship between tables. 
+Ex: FOREIGN KEY (col) REFERENCES col;
+
+AUTO_INCREMENT ---> It increases the numeric value for each new record.
+
+UNIQUE --> It ensures no duplicate
+
+NOT NULL --> It ensures no empty fields
+
+DEFAULT -->Sets a default value when user does not provide one.
+
+CHECK --> Ensures only the valid data enters.
+
+
 
 Queries 
 ---------
@@ -151,3 +168,6 @@ CURDATE() --> today's date. "yyyy-mm-dd"
 CURTIME() --> time
 NOW() --> current date and time
 DATEDIFF(date1, date2) --> different between 2 dates.
+
+
+

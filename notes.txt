@@ -169,5 +169,32 @@ CURTIME() --> time
 NOW() --> current date and time
 DATEDIFF(date1, date2) --> different between 2 dates.
 
+Joins
+------
+>> Join help us connect related data using a common column (usually a key).
 
+INNER JOIN 
+--------------
+>> Fetch only the matching records from both the table.
+Ex: select..... INNER JOIN tb2 ON expression;
 
+LEFT JOIN 
+-----------
+>> Return all rows from the LEFT table + matched rows from right table.
+Ex: select..... LEFT JOIN tb2 ON expression;
+
+RIGHT JOIN 
+-----------
+>> Return all rows from the RIGHT table + matched rows from left table.
+Ex: select..... RIGHT JOIN tb2 ON expression;
+
+CROSS join 
+----------
+matches every row from left to every row from right table.
+ex: select.. CROSS JOIN tbs2;
+
+tb1--> 3  ---> 3*2 -->6
+tb2--> 2
+
+Full Outer Join 
+-----------------

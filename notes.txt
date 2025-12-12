@@ -198,3 +198,21 @@ tb2--> 2
 
 Full Outer Join 
 -----------------
+
+
+Aggregation and Grouping
+-------------------------
+Aggregate Functions
+---------------------
+count()---> number of records and number of values.
+sum() ---> finds sum of numeric col.
+max() --> finds the largest value from a numeric col.
+min() --> finds the smallest value from a numeric col.
+avg() --> finds average value of a numeric col.
+
+Grouping 
+---------
+>> select aggregate_func from tbname GROUP BY colName;
+
+WHERE --> used to filter the rows 
+HAVING --> used to filter groups

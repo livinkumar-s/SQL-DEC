@@ -216,3 +216,34 @@ Grouping
 
 WHERE --> used to filter the rows 
 HAVING --> used to filter groups
+
+Subqueries 
+-----------
+>> It is a query inside another sql query.
+>> inner query runs first.
+>> the result from that inner query used by the outer query.
+
+Ex: outer query (inner query);
+
+Single Row Subqueries
+----------------------
+>> returns a single row.
+
+Multiple Rows Subqueries
+------------------------
+>> multiple rows.
+
+ALL
+-----
+>> condition true if it satisfies all values.
+
+ANY
+----
+condition true if any one value matches.
+Ex: select * from student where 
+marks > any (select marks from student where dept="CIVIL");
+
+Co related subqueries
+-----------------------
+>>inner query depends on outer. outer query depends on inner.
+

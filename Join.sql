@@ -44,3 +44,8 @@ select * from color;
 select * from size;
 
 select * from color cross join size;
+
+
+select * from favmovie f right join director d on f.id=d.movieId
+union
+select * from favmovie f left join director d on f.id=d.movieId;

@@ -139,6 +139,18 @@ WHERE
 used to filter rows 
 Ex: select, update, delete ..... WHERE condition;
 
+Altering Table 
+----------------
+add new column ----> ALTER TABLE tbName ADD COLUMN colDet;
+modify existing column ---> ALTER TABLE tbname MODIFY modifications;
+rename column ---> ALTER TABLE tbname CHANGE oldname newname datatype; 
+                    ALTER TABLE tbname RENAME COLUMN old to new;
+drop a column --> ALTER TABLE tbname DROP col;
+To add constraint --> ALTER TABLE tbname ADD CONSTRAINT cons details;
+
+To drop table ---> drop table tbname;
+To  drop db ---> drop database dbname;
+
 Functions in MySQL 
 ------------------
 >> Predefined Operations that takes input and returns a value.
@@ -198,7 +210,7 @@ tb2--> 2
 
 Full Outer Join 
 -----------------
-
+>> It matches all the records from both table.
 
 Aggregation and Grouping
 -------------------------

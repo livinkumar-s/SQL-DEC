@@ -259,3 +259,10 @@ Co related subqueries
 -----------------------
 >>inner query depends on outer. outer query depends on inner.
 
+Views 
+--------
+>> View is a virtual table created using a SELECT query.
+>> It does not store physical data like tables.
+>> It simply stores a query.
+
+Ex: CREATE VIEW viewName AS SELECT....;
